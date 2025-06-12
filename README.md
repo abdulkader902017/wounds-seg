@@ -1,6 +1,6 @@
-# Wound Segmentation using DeepLabV3+ (ResNet50)
+# Wound Segmentation using U-NET (ResNet50)
 
-This repository contains Python code for **semantic segmentation of chronic wounds** from images. It leverages the **DeepLabV3+** model with a **ResNet50** encoder, trained on a custom dataset of wound images and their corresponding annotations. The goal is to accurately delineate wound boundaries for medical analysis.
+This repository contains Python code for **semantic segmentation of chronic wounds** from images. It leverages the **U-NET* model with a **ResNet50** encoder, trained on a custom dataset of wound images and their corresponding annotations. The goal is to accurately delineate wound boundaries for medical analysis.
 
 ## Table of Contents
 
@@ -41,9 +41,9 @@ The model is trained on the **CO2Wounds-V2 Extended Chronic Wounds Dataset From 
 
 ## Model Architecture
 
-The segmentation model used is **DeepLabV3+** from the `segmentation_models_pytorch` library.
+The segmentation model used is **U-NET** from the `segmentation_models_pytorch` library.
 -   **Encoder**: `resnet50` (pre-trained on ImageNet)
--   **Decoder**: DeepLabV3+ specific decoder for semantic segmentation.
+-   **Decoder**: U-NET specific decoder for semantic segmentation.
 -   **Output**: Single channel with `sigmoid` activation for binary segmentation.
 
 ## Dependencies
